@@ -1,0 +1,26 @@
+{
+  "required_columns": [
+    "IMBD title ID",
+    "Original title",
+    "Release year",
+    "Genre",
+    "Duration",
+    "Country",
+    "Content Rating",
+    "Director",
+    "Income",
+    "Votes",
+    "Score"
+  ],
+  "column_types": {
+    "Release year": "int",
+    "Duration": "int",
+    "Income": "float",
+    "Votes": "int",
+    "Score": "float"
+  },
+  "value_constraints": {
+    "Score": { "min": 0, "max": 10 },
+    "Release year": { "min": 1900, "max": 2025 }
+  }
+}
