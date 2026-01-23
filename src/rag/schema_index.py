@@ -12,7 +12,7 @@ def load_schema_index():
     Loads schema documents and builds a vector index
     using Ollama embeddings to avoid OpenAI dependency.
     """
-    docs = SimpleDirectoryReader("src/schemas").load_data()
+    docs = SimpleDirectoryReader("schemas").load_data()
     #Explicitly use local embeddings (no API, no cost)
     embed_model = OllamaEmbedding(
         model_name="nomic-embed-text"

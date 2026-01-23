@@ -1,0 +1,22 @@
+{
+  "required_columns": [
+    "Transaction ID",
+    "Item",
+    "Quantity",
+    "Price Per Unit",
+    "Total Spent",
+    "Payment Method",
+    "Location",
+    "Transaction Date"
+  ],
+  "column_types": {
+    "Transaction ID": "str",
+    "Item": "str",
+    "Quantity": "int",
+    "Price Per Unit": "float",
+    "Total Spent": "float",
+    "Payment Method": "str",
+    "Location": "str",
+    "Transaction Date": "datetime"
+  }
+}

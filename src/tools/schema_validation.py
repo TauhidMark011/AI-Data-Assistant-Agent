@@ -1,7 +1,9 @@
 #(Schema-Aware Validation Tool) This is where Unnamed: 8 becomes a structural violation, not just a null stat. (Deterministic rule checks)
 import json
+from venv import logger
+from utils import load_schema_by_dataset
 
-def validate_schema(df):
+def validate_schema(df, file_path):
     """
     Phase 2: Schema-aware validation
 
@@ -11,9 +13,11 @@ def validate_schema(df):
     - Detect unexpected / malformed columns
     """
 
-    # Load schema definition
-    with open("src/schemas/imdb_schema.json", "r", encoding="utf-8") as f:
-        schema = json.load(f)
+    #Load schema definition
+    # with open("schemas/cafe_schema.json", "r", encoding="utf-8") as f:
+    #     schema = json.load(f)
+    schema = load_schema_by_dataset(file_path)
+    logger.info(f"[Validation] Loaded schema for {file_path}")
 
     issues = []
 
