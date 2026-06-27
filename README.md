@@ -357,5 +357,5 @@ MIT License — see `LICENSE` for details.
 *Built from scratch. Debugged at midnight. Documented with purpose.*
 
 __Author__
-:- Tauhid Alam 
+:- *Tauhid Alam* | 
 Data Engineer | AI Enthusiast | Building Intelligent Solutions
