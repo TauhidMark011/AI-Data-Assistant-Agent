@@ -1,2 +1,49 @@
 # Ignore environment variables file
 .env
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Python environments
+.venv/
+venv/
+
+# Python generated files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Test and tooling caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Chroma generated vector database
+data/chroma/
+
+# Uploaded user datasets
+data/uploads/
+
+# Temporary test files
+empty_test.csv
+
+# Node.js / Next.js
+node_modules/
+.next/
+out/
+dist/
+build/
+
+# Frontend environment variables
+frontend/.env.local
+frontend/.env.*.local
+
+# Logs
+*.log
+
+# Local editor configuration
+.vscode/
